@@ -191,6 +191,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.16.1"
+  intro_slider:
+    dependency: "direct main"
+    description:
+      name: intro_slider
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "2.2.9"
   matcher:
     dependency: transitive
     description:

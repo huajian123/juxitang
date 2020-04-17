@@ -61,6 +61,9 @@ dependencies:
   #验证码
   pin_input_text_field: 3.0.1
 
+  #引导页
+  intro_slider: ^2.2.9
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -84,7 +87,8 @@ flutter:
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
-
+  assets:
+    - assets/images/
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
 

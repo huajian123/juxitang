@@ -14,6 +14,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+
+    //
     // 路由
     final router = Router();
     Routes.configureRoutes(router);
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
           onGenerateRoute: Application.router.generator,
           debugShowCheckedModeBanner: true,
           theme: AppTheme.theme,
-          home: Container(),
+          home: IndexPage(),
         ));
   }
 }
