@@ -364,15 +364,15 @@ class IntroScreenState extends State<IntroScreen> {
       nameNextBtn: "下一页",
       slides: this.slides,
       onDonePress: (){
-        Navigator.push(
+        Navigator.pushReplacementNamed(
           context,
-          MaterialPageRoute(builder: (context) => Login()),
+          "/login",
         );
       },
       onSkipPress: (){
-        Navigator.push(
+        Navigator.pushReplacementNamed(
           context,
-          MaterialPageRoute(builder: (context) => Login()),
+          "/login",
         );
       },
       colorDot: ColorsUtil.hexColor(0xffffff),
