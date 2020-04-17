@@ -1,7 +1,10 @@
+import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:intro_slider/intro_slider.dart';
 import 'package:intro_slider/slide_object.dart';
+import 'package:juxitang/common/routers/application.dart';
 import 'package:juxitang/common/utils/color_util.dart';
+import 'package:juxitang/pages/login_page/login.dart';
 
 // https://github.com/duytq94/flutter-intro-slider
 //https://s0pub0dev.icopy.site/packages/intro_slider
@@ -353,14 +356,6 @@ class IntroScreenState extends State<IntroScreen> {
     );
   }
 
-  void onDonePress() {
-    print("完成");
-  }
-
-  void onSkipPress() {
-    print("跳过");
-  }
-
   @override
   Widget build(BuildContext context) {
     return new IntroSlider(
@@ -368,8 +363,18 @@ class IntroScreenState extends State<IntroScreen> {
       nameDoneBtn: "进入",
       nameNextBtn: "下一页",
       slides: this.slides,
-      onDonePress: this.onDonePress,
-      onSkipPress: this.onSkipPress,
+      onDonePress: (){
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => Login()),
+        );
+      },
+      onSkipPress: (){
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => Login()),
+        );
+      },
       colorDot: ColorsUtil.hexColor(0xffffff),
 
     );
